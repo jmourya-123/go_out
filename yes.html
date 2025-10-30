@@ -11,17 +11,33 @@
       <div>
         <h1 class="header_text">Yaaaaayyyy!! See you soon!</h1>
       </div>
+
       <div class="gif_container">
         <img
-          src="https://media.giphy.com/media/MDJ9IbxxvDUQM/giphy.gif"
-          alt="Happy dance"
+          src="https://i.postimg.cc/wVfVTvB3/a-lot-of-love-and-affection-milk-and-mocha.gif"
+          alt="Cute animated illustration"
         />
       </div>
-       <p>
 
-      </p>
+      <!-- Form to capture the date and email it to you -->
+      <form
+        action="https://formsubmit.co/jkmourya1456@gmail.com"
+        method="POST"
+        class="date-picker-container"
+      >
+        <h2 class="header_text">When are you free?</h2>
+        
+        <!-- The date input. The 'name' attribute is important! -->
+        <input type="date" id="datePicker" name="date" required />
+
+        <!-- This hidden input sets the email subject line -->
+        <input type="hidden" name="_subject" value="She said Yes! New Date!">
+        
+        <!-- The submit button for the form -->
+        <button type="submit" class="btn">Confirm the Date</button>
+      </form>
+
+      <p><a href="https://www.instagram.com/developerfaizan/">@developerfaizan</a></p>
     </div>
   </body>
 </html>
-
-
