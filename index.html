@@ -34,23 +34,31 @@
             window.location.href = "yes.html";
           }
 
+
           function moveButton() {
+            const noButton = document.getElementById("noButton");
+            
+            // Add this line to make the button movable
+            noButton.style.position = 'absolute';
+          
             var x =
               Math.random() *
-              (window.innerWidth -
-                document.getElementById("noButton").offsetWidth);
+              (window.innerWidth - noButton.offsetWidth);
             var y =
               Math.random() *
-              (window.innerHeight -
-                document.getElementById("noButton").offsetHeight);
-            document.getElementById("noButton").style.left = `${x}px`;
-            document.getElementById("noButton").style.top = `${y}px`;
+              (window.innerHeight - noButton.offsetHeight);
+            
+            noButton.style.left = `${x}px`;
+            noButton.style.top = `${y}px`;
           }
+
+          
         </script>
       </div>
     </div>
   </body>
 </html>
+
 
 
 
